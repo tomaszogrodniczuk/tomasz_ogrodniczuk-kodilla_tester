@@ -21,8 +21,8 @@ public class FirstClass {
         int notebookWeight = notebook.getWeight();
         System.out.println(notebookWeight);
 
-        LeapYear leapYear = new LeapYear(2120);
-        boolean rokPrzestepny = leapYear.getLeapYear();
-        System.out.println("Czy rok przestepny?  " + rokPrzestepny);
+        LeapYear leapYear = new LeapYear(2100);
+        boolean leap = leapYear.getLeapYear();
+        System.out.println("Czy rok przestepny?  " + leap);
     }
 }
