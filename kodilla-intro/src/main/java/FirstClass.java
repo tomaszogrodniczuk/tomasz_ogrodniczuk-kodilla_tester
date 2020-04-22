@@ -18,5 +18,11 @@ public class FirstClass {
         oldNotebook.checkWeight();
         oldNotebook.checkClass();
 
+        int notebookWeight = notebook.getWeight();
+        System.out.println(notebookWeight);
+
+        LeapYear leapYear = new LeapYear(2120);
+        boolean rokPrzestepny = leapYear.getLeapYear();
+        System.out.println("Czy rok przestepny?  " + rokPrzestepny);
     }
 }

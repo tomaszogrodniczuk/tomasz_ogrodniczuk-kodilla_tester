@@ -39,7 +39,12 @@ public class Notebook {
         }else {
             System.out.println("Urzadzenie jest klasy sredniej.");
         }
-        }
+    }
 
+    public int getWeight(){
+
+        return this.weight;
+
+    }
 
 }
