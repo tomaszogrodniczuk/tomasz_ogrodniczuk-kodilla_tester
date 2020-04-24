@@ -24,5 +24,15 @@ public class FirstClass {
         LeapYear leapYear = new LeapYear(2100);
         boolean leap = leapYear.getLeapYear();
         System.out.println("Czy rok przestepny?  " + leap);
+
+        Loops loops = new Loops();
+        int sum = loops.getSum();
+        System.out.println(sum);
+
+        int i = 0;
+        while (i <= 10) {
+            System.out.println(i);
+            i++;
+        }
     }
 }
