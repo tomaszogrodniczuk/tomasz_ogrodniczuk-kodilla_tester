@@ -8,10 +8,10 @@ public class Application {
         int b = 8;
         int sumResult = calculator.sum(a, b);
         int minusResult = calculator.minus(a,b);
-        int expResult = calculator.exp(a);
+        int expResult = (int)calculator.exp(a,b);
         boolean correctSum = ResultChecker.assertEquals(13, sumResult);
         boolean correctMinus = ResultChecker.assertEquals(-3,minusResult);
-        boolean correctExp = ResultChecker.assertEquals(25, expResult);
+        boolean correctExp = ResultChecker.assertEquals(390625, expResult);
 
         if (correctSum) {
             System.out.println("Metoda sum działa poprawnie dla liczb " + a + " i " + b);
@@ -26,9 +26,9 @@ public class Application {
         }
 
         if (correctExp) {
-            System.out.println("Metoda exp działa poprawnie dla liczby " + a);
+            System.out.println("Metoda exp działa poprawnie dla liczb " + a + " i " + b);
         } else {
-            System.out.println("Metoda exp nie działa poprawnie dla liczby " + a);
+            System.out.println("Metoda exp nie działa poprawnie dla liczb " + a + " i " + b);
         }
     }
 }
