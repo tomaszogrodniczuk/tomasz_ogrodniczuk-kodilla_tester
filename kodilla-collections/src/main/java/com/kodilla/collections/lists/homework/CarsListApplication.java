@@ -26,5 +26,7 @@ public class CarsListApplication {
         System.out.println("=====   AFTER REMOVING =====");
         for (Car car : cars)
             CarUtils.describeCar(car);
+
+        System.out.println("Size: " + cars.size());
     }
 }
