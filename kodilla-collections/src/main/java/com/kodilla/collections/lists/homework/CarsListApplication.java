@@ -16,21 +16,24 @@ public class CarsListApplication {
         cars.add(new Ford());
         cars.add(new Opel());
 
+        Car auto = new Ford();
+        cars.add(auto);
+
         System.out.println("=====   BEFORE REMOVING =====");
                 for (Car car : cars)
             CarUtils.describeCar(car);
 
         cars.remove(0);
         cars.remove(new Opel());
+        cars.remove(auto);
 
-        Car auto = new Ford();
-        cars.add(auto);
+
 
         System.out.println("=====   AFTER REMOVING =====");
         for (Car car : cars)
             CarUtils.describeCar(car);
 
-        cars.remove(auto);
+
 
         System.out.println("Size: " + cars.size());
     }
