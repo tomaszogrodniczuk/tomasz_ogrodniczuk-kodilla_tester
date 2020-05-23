@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BookManager {
-
     private List<Book> books = new ArrayList<>();
 
     public Book createBook (String title, String author) {
