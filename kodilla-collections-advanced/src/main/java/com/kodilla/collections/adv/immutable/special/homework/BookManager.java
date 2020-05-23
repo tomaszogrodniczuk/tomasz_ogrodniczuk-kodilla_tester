@@ -10,8 +10,6 @@ public class BookManager {
     public Book createBook (String title, String author) {
         return new Book (title,author);
     }
-
-
     public void createBooksList(String title, String author){
         Book tempBook = new Book (title, author);
         for (Book book : books) {
