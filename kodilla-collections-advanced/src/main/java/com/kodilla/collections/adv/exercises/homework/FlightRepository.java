@@ -7,7 +7,6 @@ import java.util.List;
 
 public class FlightRepository {
     private List<Flight> flights = new ArrayList<>();
-
     public FlightRepository() {
         this.flights.add(new Flight("Warszawa", "Londyn"));
         this.flights.add(new Flight("Paryz", "Wrocław"));
