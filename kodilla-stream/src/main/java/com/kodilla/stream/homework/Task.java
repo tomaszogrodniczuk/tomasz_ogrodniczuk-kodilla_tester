@@ -11,6 +11,7 @@ public class Task {
         this.name = name;
         this.opened = opened;
         this.deadline = deadline;
+
     }
 
     public String getName() {
